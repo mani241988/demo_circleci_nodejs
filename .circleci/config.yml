@@ -9,9 +9,9 @@ steps:
 - run:
 name: Install npm dependencies
 command: |
-npm install --save
+- npm install --save
 
-build_docker_image:
+Build_Docker_image:
 docker:
 - image: circleci/node:12
 
