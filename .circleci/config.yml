@@ -21,6 +21,7 @@ jobs:
           command: |
                         docker build -t nodejswebapp1 -t thatimanikanta30/nodejswebapp1:latest .
                         echo $DOCKER_PASSWORD | docker login -u thatimanikanta30 --password-stdin
+                        docker push thatimanikanta30/nodejswebapp1:latest
 
 workflows:
   build_test:
